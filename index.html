@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- This section of code is always required in every HTML document. -->
+<html lang="en"> <!-- This section of code describes the HTML language. Since this website is for an American business, English is specified as the language. -->
+    <head> <!-- Indicates starting the head section. -->
+        <title>Jyoti | Indian Restaurant &amp; Banquet Hall</title> <!-- Specifies the name of the business to be shown as the title of the website on the page's tab. Since this website is for Jyoti, the restaurant name is shown along with its banquet hall. -->
+        <link rel="stylesheet" href="stylesheets/Jyoti.css"> <!-- References root folder where all applicable files are to be used for every single one of these pages for the Jyoti website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/> <!-- This section of code is always required in every HTML document. --> 
+    </head> <!-- Closes the head section. -->
+    
+    <body> <!-- Beginning of the homepage content. -->
+        <header> <!-- Indicates starting the header section. -->
+            <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Specifies the name of the website for users to see when they directly enter the website. -->
+        
+            <nav class="navcontainer">
+                <ul class="menu"> <!-- Specifies navigation links concurrent for all webpages of this website. -->
+                    <li> <!-- "currentpage" is bolded given that end-user is viewing this specific webpage.. -->
+                        <a class="currentpage" href="index.html">Home</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the homepage where users are immediately directed to when visting Jyoti's website. -->
+                    <li>
+                        <a href="Our%20Team.html">Our Team</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the team members webpage for Jyoti. -->
+                    <li>
+                        <a href="Gallery.html">Gallery</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the images webpage for Jyoti. -->
+                    <li> 
+                        <a href="Catering.html">Catering</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the catering and banquet hall webpage for Jyoti. -->
+                    <li> 
+                        <a href="ContactUs.html">Contact Us</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This showcases the contact information webpage for Jyoti. -->
+                </ul>
+                
+                <img src="images/headerandfooter/HamburgerMenu.png" id="hamburger-icon"> <!-- Shows a hamburger-menu navigation for the media queries. -->
+            </nav> <!-- Closes the navigation section. -->    
+        </header> <!-- Closes the header section. -->
+        
+        <main class="homepagemain">
+            <div class="ourstorycontainer"> <!-- This section contains an introduction of Jyoti with their company story. In addition, a brief video is featured showing the interior of their restaurant. -->
+                <video controls id="homepagevideo"><source src="media/HomepageVideo.mp4" type="video/mp4"></video>
+                <div class="ourstory">
+                    <h1><u>Our Story</u></h1>
+                    
+                    <p>Jyoti, derived from the Hindi meaning of "divine light," is the cornerstone of fine Indian dining in the New York tri-state area. What started out as a local pasttime making dishes for owner Aman Banerjee quickly turned into opening his own restaurant after the immense praise received from his customers. By 1994, the restaurant officially opened to the public in the heart of Wayne, New Jersey, allowing people around the New York City area to have easy access to explore the delicious flavors Jyoti offers.</p>
+
+                    <p>Jyoti is an Indian restaurant known for its premiere assortment of foods from samosas and raita, but is much more than just that. The restaurant offers an approach to select from non-contemporary dishes such as lamb curry, shrimp bhindi, and even sham swera, among others. The bar is filled with an assortment of alcoholic and non-alcoholic beverages as well to celebrate the end of the work week, or to enjoy the big game with your friends on our televisions. In addition to the luxury cuisine, creating appetizing options for an array of consumers with different tastes and preferences, Jyoti is also known for its banquet hall. Events from Sweet 16's to receptions and other festivities can be held in our massive banquet hall. It's a match made in heaven with fine Indian dining and your event! Jyoti also offers catering for customers to enjoy Indian dishes at home; no matter which option you choose, our staff ensures that you will be satisfied and have your needs taken care of.</p>
+
+                    <h2>Our commitment to you is:</h2>
+                    <ul>
+                        <li>
+                            Delivering only the highest quality assortment of food and drinks to our customers.
+                        </li>
+                        <li>
+                            Using produce that is locally sourced and does not pose a risk to consume.
+                        </li>
+                        <li>
+                            Preserve the image of classic Indian food whilst also catering to the newer generation of food lovers using aesthetic ambiance and decor.
+                        </li>
+                        <li>  
+                            Ensuring the highest possible customer satisfaction.
+                        </li> 
+                        <li>
+                            Creating a culinary experience that will have you coming back for more.
+                        </li>
+                    </ul>    
+
+                    <p>At Jyoti, know that this isn't just any Indian restaurant. It's a family-owned gem that has been appreciated for many generations. And we'd love for you to be a part of this tantalizing experience. We are proud to welcome you into our family; thank you!</p>            
+                </div> 
+            </div>
+            
+            <div class="featuredfoods"> <!-- Shows two examples of the aesthetically pleasing food and its descriptions one would find at Jyoti. -->
+                <figure>
+                    <img src="images/home/dishes/BhindiMasala.jpg">
+                    <figcaption><b>Bhindi Masala</b> - Okra stuffed with Eastern spices and cooked with onions and peppers.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/home/dishes/GobiManchurian.jpg">
+                    <figcaption><b>Gobi Manchurian</b> - Cauliflower lightly battered and sautéed in an Indo-Chinese sauce.</figcaption>
+                </figure>
+            </div>
+            
+            <section class="testimonialscontainer"> <!-- Displays four sample testimonials of customers who dined or ordered from Jyoti. -->
+                <h1><u>Testimonials</u></h1>
+                
+                <div class="testimonialsgrid">
+                    <div class="testimonialsinfo">
+                        Upon entering the restaurant, I was fascinated by the diverse aromas of spices. The meal turned out to be a great experience for me and my family. Would highly recommend Jyoti as the premiere restaurant for Indian dining!
+                        <br class="hidenotdesktop"> <!-- This class hides the line breaks when the media query is applied. The goal was to have all the images and the names of the people giving reviews to align with each other. -->
+                        <br class="hidenotdesktop"> <!-- This class hides the line breaks when the media query is applied. The goal was to have all the images and the names of the people giving reviews to align with each other. -->
+                        <br><div class="testimonialsheadshots"><img src="images/home/testimonials/Person1.jpg"></div>
+                            ~ Rajiv Verma 
+                    </div>
+                    
+                    <div class="testimonialsinfo">
+                        I hosted a surprise graduate party for my friend at Jyoti. The event in their banquet hall was exemplary, and everyone praised the foods offered. The appetizers in particular were a hit, and overall, the night was amazing.
+                        <br class="hidenotdesktop"> <!-- This class hides the line breaks when the media query is applied. The goal was to have all the images and the names of the people giving reviews to align with each other. -->
+                        <br class="hidenotdesktop"> <!-- This class hides the line breaks when the media query is applied. The goal was to have all the images and the names of the people giving reviews to align with each other. -->
+                        <br><div class="testimonialsheadshots"><img src="images/home/testimonials/Person2.jpg"></div>
+                            ~ Shreya Gandhi
+                    </div>
+                    
+                    <div class="testimonialsinfo">
+                        Had my first date here at Jyoti. Both of us were taken care of nicely, and the taste of Jyoti's food brought back childhood nostalgia for eating Punjabi food. This is the perfect restaurant to enjoy Indian food and be treated with the utmost care. I am definitely coming back again!
+                        <br> <!-- Class "hidenotdesktop" unnecessary given that the image and the name of the person reviewing here needs to align with those contained in the fourth testimonial. -->
+                        <br><div class="testimonialsheadshots"><img src="images/home/testimonials/Person3.jpeg"></div>
+                             ~ Tom Richards
+                    </div>
+                    
+                    <div class="testimonialsinfo">
+                        Our team and I catered a lunch from Jyoti. None of us tasted Indian cuisine before, and we were unsure of trying. All of us loved the different meat and seafood options provided. Additionally, the staff member executing our catering order displayed effective communication skills.
+                        <div class="testimonialsheadshots"><img src="images/home/testimonials/Person4.jpeg"></div>
+                             ~ Hank Alexander
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer> <!-- Begins footer section. -->
+            <br>Copyright &copy; 2024 <b>Jyoti</b> <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Indicates copyright information, including copyright symbol. Website logo is also displayed. -->
+            <br>
+            <br><a href="https://www.facebook.com/jyotires/about/?ref=page_internal&paipv=0&eav=AfYeGMl2Vd7WpVTVwzfjCfOfo8eoOkJyXsWJTWg1PM1DosEBUR9bvm4H7hdTPZ5bPXw&_rdr"><img src="images/headerandfooter/FacebookLogo.jpg"></a> <!-- Displays clickable Facebook logo where end-users are taken directly to Jyoti's Facebook page. -->
+            <a href="https://www.instagram.com/jyotibanquet/"><img src="images/headerandfooter/InstagramLogo.png"></a> <!-- Displays clickable Instagram logo where end-users are taken directly to Jyoti's Instagram page. -->
+        </footer> <!-- Ends footer section. -->
+        
+        <script type="text/javascript" src="scripts/Hamburger.js"></script> <!-- Opens and closes the navigation menu specified for media queries only. -->
+        
+        <script type="text/javascript">
+            alert("Your Gateway to India!")
+        </script> <!-- Displays pop-up message appearing on homepage only when end-users visit the website of Jyoti, showing that they must try the food and drink to get a full taste of Indian cuisine. -->
+    </body>
+</html> <!-- Ends what end-user sees for particular webpage. -->

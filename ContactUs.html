@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- This section of code is always required in every HTML document. -->
+<html lang="en"> <!-- This section of code describes the HTML language. Since this website is for an American business, English is specified as the language. -->
+    <head> <!-- Indicates starting the head section. -->
+        <title>Jyoti | Indian Restaurant &amp; Banquet Hall</title> <!-- Specifies the name of the business to be shown as the title of the website on the page's tab. Since this website is for Jyoti, the restaurant name is shown along with its banquet hall. -->
+        <link rel="stylesheet" href="stylesheets/Jyoti.css"> <!-- References root folder where all applicable files are to be used for every single one of these pages for the Jyoti website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/> <!-- This section of code is always required in every HTML document. --> 
+    </head> <!-- Closes the head section. -->
+    
+    <body> <!-- Beginning of the homepage content. -->
+        <header> <!-- Indicates starting the header section. -->
+            <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Specifies the name of the website for users to see when they directly enter the website. -->
+        
+            <nav class="navcontainer">
+                <ul class="menu"> <!-- Specifies navigation links concurrent for all webpages of this website. -->
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the homepage where users are immediately directed to when visting Jyoti's website. -->
+                    <li>
+                        <a href="Our%20Team.html">Our Team</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the team members webpage for Jyoti. -->
+                    <li>
+                        <a href="Gallery.html">Gallery</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the images webpage for Jyoti. -->
+                    <li> 
+                        <a href="Catering.html">Catering</a>
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the catering and banquet hall webpage for Jyoti. -->
+                    <li> <!-- "currentpage" is bolded given that end-user is viewing this specific webpage.. -->
+                        <a class="currentpage" href="ContactUs.html">Contact Us</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This showcases the contact information webpage for Jyoti. -->
+                </ul>
+        
+                <img src="images/headerandfooter/HamburgerMenu.png" id="hamburger-icon"> <!-- Shows a hamburger-menu navigation for the media queries. -->
+            </nav> <!-- Closes the navigation section. -->    
+        </header> <!-- Closes the header section. -->
+        
+        <main>
+            <div class="contactinfo"> <!-- Contains all relevant contact information for Jyoti and its hours of operation for the restaurant and banquet hall. -->
+                <div class="contactitems"> <!-- Contains contact information of the phone number and email address for customers to reach out to Jyoti. For the latter, it displays a clickable email link where the email address gets automatically placed in the email application. The address of the restaurant is shown as well. -->
+                    <br><img src="images/contactus/contactitems/AddressLogo.png"> 24 U.S. Highway 46, <span class="hidenotphone"> <!-- For the smaller media query, line breaks are included to align the text. -->
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Wayne, New Jersey, <span class="hidenotphone"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>07470 <!-- For the smaller media query, line breaks are included to align the text. -->
+                    <br><img src="images/contactus/contactitems/PhoneLogo.png"> (973) 890-2224
+                    <br><img src="images/contactus/contactitems/EmailLogo.svg"><a href="mailto:guglania@yahoo.com">guglania@yahoo.com</a>
+                </div>
+
+                <div class="hours restauranthours">
+                    <h1><u>Restaurant Hours</u></h1>
+                    <strong>Monday</strong>: Closed
+                    <br><strong>Tuesday-Sunday</strong>: 11:30 AM–2:30 PM, 5–9 PM
+                </div>
+
+                <div class="hours banquethours">
+                    <h1><u>Banquet Hours</u></h1>
+                    <strong>Monday-Wednesday</strong>: Closed
+                    <br><strong>Thursday-Friday</strong>: 5:00 PM-12:00 AM
+                    <br><strong>Saturday</strong>: 2:00 PM-11:00 PM
+                    <br><strong>Sunday</strong>: 2:00 PM-7:00 PM
+                </div>
+            </div>
+
+            <div class="mapandform"> <!-- Class contains rules for both the map and form displayed on webpage, -->
+                <section class="mapJyoti">
+                    <a href="https://www.google.com/maps/place/Jyoti/@40.8921282,-74.2667017,16z/data=!3m1!4b1!4m6!3m5!1s0x89c301a009620873:0x4a95b4c58c68d18b!8m2!3d40.8921282!4d-74.2641268!16s%2Fg%2F1v1sm4xh?entry=ttu"><img src="images/contactus/JyotiLocation.png"></a>
+                </section>
+
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php"> <!-- Form is included for customers to contact staff members directly at Jyoti. -->
+                    <label for="getintouch-name">Name</label>
+                        <input type="text" id="getintouch-name" name="getintouch-name" placeholder="John Doe" required>
+
+                    <label for="getintouch-phonenumber">Phone Number</label>
+                        <input type="tel" id="getintouch-phonenumber" name="getintouch-phonenumber" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" placeholder="(123) 456-7890" required> <!-- Pattern is included to ensure phone number matches the format provided in the pattern. Placeholder gives an example of the type of pattern to follow when inputting the phone number in the form. --> 
+
+                    <label for="getintouch-email">Email Address</label>
+                        <input type="email" id="getintouch-email" name="getintouch-email" placeholder="johndoe@yahoo.com" required>
+
+                    <label for="getintouch-contactreason">Reason for Contact</label>
+                        <select id="getintouch-contactreason" name="getintouch-contactreason"> <!-- Options specify common aspects customers typically contact Jyoti about. -->
+                            <option value="catering">Catering</option>
+                            <option value="banquethall">Banquet Hall</option>
+                            <option value="employment">Employment Opportunities</option>
+                            <option value="itemquestions">Food & Drink Questions</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                    <label for="getintouch-message">Message</label>
+                        <textarea id="getintouch-message" name="getintouch-message" rows="7"></textarea> <!-- Entering the message is the only optional aspect of the form for end-users to fill out. -->
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main> <!-- Ends main section.-->
+
+        <footer> <!-- Begins footer section.-->
+            <br>Copyright &copy; 2024 <b>Jyoti</b> <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Indicates copyright information, including copyright symbol. Website logo is also displayed.-->
+            <br>
+            <br><a href="https://www.facebook.com/jyotires/about/?ref=page_internal&paipv=0&eav=AfYeGMl2Vd7WpVTVwzfjCfOfo8eoOkJyXsWJTWg1PM1DosEBUR9bvm4H7hdTPZ5bPXw&_rdr"><img src="images/headerandfooter/FacebookLogo.jpg"></a> <!-- Displays clickable Facebook logo where end-users are taken directly to Jyoti's Facebook page.-->
+            <a href="https://www.instagram.com/jyotibanquet/"><img src="images/headerandfooter/InstagramLogo.png"></a> <!-- Displays clickable Instagram logo where end-users are taken directly to Jyoti's Instagram page.-->
+        </footer> <!-- Ends footer section.-->
+        
+        <script type="text/javascript" src="scripts/Hamburger.js"></script> <!-- Opens and closes the navigation menu specified for media queries only. -->
+    </body>
+</html> <!-- Ends what end-user sees for particular webpage. -->

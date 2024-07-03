@@ -1,0 +1,155 @@
+<!DOCTYPE html> <!-- This section of code is always required in every HTML document. -->
+<html lang="en"> <!-- This section of code describes the HTML language. Since this website is for an American business, English is specified as the language. -->
+    <head> <!-- Indicates starting the head section. -->
+        <title>Jyoti | Indian Restaurant &amp; Banquet Hall</title> <!-- Specifies the name of the business to be shown as the title of the website on the page's tab. Since this website is for Jyoti, the restaurant name is shown along with its banquet hall. -->
+        <link rel="stylesheet" href="stylesheets/Jyoti.css"> <!-- References root folder where all applicable files are to be used for every single one of these pages for the Jyoti website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/> <!-- This section of code is always required in every HTML document. --> 
+    </head> <!-- Closes the head section. -->
+    
+    <body> <!-- Beginning of the homepage content. -->
+        <header> <!-- Indicates starting the header section. -->
+            <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Specifies the name of the website for users to see when they directly enter the website. -->
+        
+            <nav class="navcontainer">
+                <ul class="menu"> <!-- Specifies navigation links concurrent for all webpages of this website. -->
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the homepage where users are immediately directed to when visting Jyoti's website. -->
+                    <li> <!-- "currentpage" is bolded given that end-user is viewing this specific webpage.. -->
+                        <a class="currentpage" href="Our%20Team.html">Our Team</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the team members webpage for Jyoti. -->
+                    <li>
+                        <a href="Gallery.html">Gallery</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the images webpage for Jyoti. -->
+                    <li> 
+                        <a href="Catering.html">Catering</a>
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the catering and banquet hall webpage for Jyoti. -->
+                    <li> 
+                        <a href="ContactUs.html">Contact Us</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This showcases the contact information webpage for Jyoti. -->
+                </ul>
+                
+                <img src="images/headerandfooter/HamburgerMenu.png" id="hamburger-icon"> <!-- Shows a hamburger-menu navigation for the media queries. -->
+            </nav> <!-- Closes the navigation section. -->    
+        </header> <!-- Closes the header section. -->
+        
+        <main class="ourteammain">
+            <div class="ourteamvideocontainer"> <!-- Displays video of the owner talking about the restaurant. Unlike the video shown on the homepage, this video autoplays and requires the end-user to unmute the audio. -->
+                <h1><u>Owner Message!</u></h1>
+                <video autoplay muted controls id="ourteamvideo"><source src="media/OurTeamVideo.mp4" type="video/mp4"></video>
+            </div>
+            
+            <div class="chefscontainer teamcontainer"> <!-- Displays headshots and a description of a few of Jyoti's chefs. -->
+                <h1><u>Meet Our Chefs!</u></h1>
+
+                <div class="teamgroup"> <!-- Uses flexbox to stack profiles on the smaller media query only. -->
+                    <div class="chefsinfo">
+                        <h2>Deepak Mehra</h2>
+
+                        <div class="staffheadshots"><img src="images/team/chefs/Chef1.jpg"></div>    
+                        
+                        <p>With over 20 years of culinary experience, Deepak plays an integral role in Jyoti's cooking. The executive chef of the restaurant, Parag ensures that dishes sent out to customers are up to the highest standards and that they display quality in both appearance and taste. The reception for Deepak's cooking has been praised and echoed by numerous customers, and Jyoti could not be more blessed to have him as a team member here.</p>
+                    </div>
+
+                    <div class="chefsinfo">
+                        <h2>Jasjit Kapadia</h2>
+
+                        <div class="staffheadshots"><img src="images/team/chefs/Chef2.jpg"></div>
+
+                        
+                        <p>Jasjit is a sous-chef at Jyoti experienced with the handling, marination, and preparation of ingredients for dishes containing meat and seafood. Being 100&percnt; Punjabi, Jasjit knows the ins and outs of how to make properly seasoned dishes with lamb, chicken, goat, and even shrimp products. Jyoti is honored to be working with someone as knowledgeable as Jasjit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bartenderscontainer teamcontainer"> <!-- Displays headshots and a description of a few of Jyoti's bartenders. -->
+                <h1><u>Meet Our Bartenders!</u></h1>
+
+                <div class="teamgroup"> <!-- Uses flexbox to stack profiles on the smaller media query only. -->
+                    <div class="bartendersinfo">
+                        <h2>José Luis</h2>
+
+                        <div class="staffheadshots"><img src="images/team/bartenders/Bartender1.jpg"></div>
+
+                        <p>José has been bartending for over 30 years. He has solid expertise in creating drinks from virgin mojitos to signature cocktails. A patient person by background, José appreciates mingling with people every day and loves showcasing his talents and abilities in making drinks. He can even create Indian drinks with alcohol; make sure to ask so you can experience a savory delight to quench your thirst!</p>
+                    </div>
+
+                    <div class="bartendersinfo">
+                        <h2>Nikhil Banerjee</h2>
+
+                        <div style="justify-content: center" class="staffheadshots"><img style="height: 100%; width: initial" src="images/team/bartenders/Bartender2.jpg"></div> <!-- Uses in-line CSS because headshot was not matching the formatting of that of the other headshots. -->
+
+                        <p>Currently a post-graduate college student, Nikhil helps out his family who owns the restaurant with bartending. Nikhil greatly values the opportunity to learn about improvising with different ingredients to create new drinks. Recently, he ventured overseas as part of his university’s study-abroad program, visiting many local bars in Europe to experience the different beers offered. He loves talking about sports with you when the games are featured on our massive televisions!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="waiterscontainer teamcontainer"> <!-- Displays headshots and a description of a few of Jyoti's waiters. -->
+                <h1><u>Meet Our Waiters!</u></h1>
+
+                <div class="teamgroup"> <!-- Uses flexbox to stack profiles on the smaller media query only. -->
+                    <div class="waitersinfo">
+                        <h2>Christian Escobar</h2>
+
+                        <div class="staffheadshots"><img src="images/team/waiters/Waiter1.jpg"></div>
+
+                        <p>Christian grew up in Mexico, but has since ventured out into the United States and is fluent in memorizing orders. Adept in shifting from table to table at even the busiest times, Christian can memorize your order and aspects of the menu even without logging any information down! His versatility makes him a valuable asset to Jyoti, and he absolutely loves every moment spent here interacting with different customers.</p>
+                    </div>
+
+                    <div class="waitersinfo">
+                        <h2>Shivam Patel</h2>
+
+                        <div class="staffheadshots"><img src="images/team/waiters/Waiter2.jpg"></div>
+
+                        <p>Having waited tables for over 5 years now at Jyoti, Shivam appreciates every minute spent here perfecting his communication skills. Shivam is extremely patient and is highly praised by his coworkers for his humble attitude in addition to his modest nature. Jyoti could not be more happy to have him as a member of our team.</p>
+                    </div>
+
+                    <div class="waitersinfo">
+                        <h2>Antonio Scott</h2>
+
+                        <div style="justify-content: center" class="staffheadshots"><img style="height: 100%; width: initial" src="images/team/waiters/Waiter3.jpg"></div> <!-- Uses in-line CSS because headshot was not matching the formatting of that of the other headshots. -->
+
+                        <p>Antonio's signature smile is the reason why the atmosphere is always lit up at Jyoti. Antonio has waited tables for just 2 years, but his impact on Jyoti is extremely profound, with Jyoti seating a higher-than-usual amount of customers inside the restaurant. You can also find Antonio working your event as a team member in our banquet hall; he may even strike a move or two if there's music at your event!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="servercontainer teamcontainer"> <!-- Displays headshots and a description of one of Jyoti's servers. -->
+                <h1><u>Meet Our Server!</u></h1>
+
+                <div class="teamgroup"> <!-- Uses flexbox to stack profiles on the smaller media query only. -->
+                    <div class="serverinfo">
+                        <h2>Tejas (Tej) Banerjee</h2>
+
+                        <div class="staffheadshots"><img src="images/team/server/Server.png"></div>
+
+                        <p>Like one of our waiters Nikhil, Tej helps out his family with the restaurant. Tej hopes to someday transition from the role of serving tables into working full-time at the restaurant and taking over the family business at Jyoti. Tej loves seeing people from families to young couples and even white-collar individuals walking into the restaurant and immediately getting awed by the ambiance of the restaurant.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caterercontainer teamcontainer"> <!-- Displays headshots and a description of one of Jyoti's caterers. -->
+                <h1><u>Meet Our Caterer!</u></h1>
+
+                <div class="teamgroup"> <!-- Uses flexbox to stack profiles on the smaller media query only. -->
+                    <div class="catererinfo">
+                        <h2>Priya Kapadia</h2>
+
+                        <div style="align-items: flex-start" class="staffheadshots"><img src="images/team/caterer/Caterer.avif"></div> <!-- Uses in-line CSS because headshot was not matching the formatting of that of the other headshots. -->
+
+                        <p>Priya is Jyoti's caterer who works on supplying orders for events either in the banquet hall or at your location. She works with you from the get-go, no matter if your order is basic or complex. Priya's end goal is to ensure that your event is successful by providing a tasty assortment of Indian food and drinks Jyoti offers. Priya will treat your event with the utmost care and responsibility from noting details such as allergies and other dietary preferences when making your order to providing you with a momentous experience that is to be cherished for a lifetime. Feel free to visit our <a href="Catering.html">catering page</a> for more information to book your next event with Jyoti!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer> <!-- Begins footer section.-->
+            <br>Copyright &copy; 2024 <b>Jyoti</b> <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Indicates copyright information, including copyright symbol. Website logo is also displayed.-->
+            <br>
+            <br><a href="https://www.facebook.com/jyotires/about/?ref=page_internal&paipv=0&eav=AfYeGMl2Vd7WpVTVwzfjCfOfo8eoOkJyXsWJTWg1PM1DosEBUR9bvm4H7hdTPZ5bPXw&_rdr"><img src="images/headerandfooter/FacebookLogo.jpg"></a> <!-- Displays clickable Facebook logo where end-users are taken directly to Jyoti's Facebook page.-->
+            <a href="https://www.instagram.com/jyotibanquet/"><img src="images/headerandfooter/InstagramLogo.png"></a> <!-- Displays clickable Instagram logo where end-users are taken directly to Jyoti's Instagram page.-->
+        </footer> <!-- Ends footer section.-->
+        
+        <script type="text/javascript" src="scripts/Hamburger.js"></script> <!-- Opens and closes the navigation menu specified for media queries only. -->
+    </body>
+</html> <!-- Ends what end-user sees for particular webpage. -->

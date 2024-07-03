@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- This section of code is always required in every HTML document. -->
+<html lang="en"> <!-- This section of code describes the HTML language. Since this website is for an American business, English is specified as the language. -->
+    <head> <!-- Indicates starting the head section. -->
+        <title>Jyoti | Indian Restaurant &amp; Banquet Hall</title> <!-- Specifies the name of the business to be shown as the title of the website on the page's tab. Since this website is for Jyoti, the restaurant name is shown along with its banquet hall. -->
+        <link rel="stylesheet" href="stylesheets/Jyoti.css"> <!-- References root folder where all applicable files are to be used for every single one of these pages for the Jyoti website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/> <!-- This section of code is always required in every HTML document. --> 
+    </head> <!-- Closes the head section. -->
+    
+    <body> <!-- Beginning of the homepage content. -->
+        <header> <!-- Indicates starting the header section. -->
+            <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Specifies the name of the website for users to see when they directly enter the website. -->
+        
+            <nav class="navcontainer">
+                <ul class="menu"> <!-- Specifies navigation links concurrent for all webpages of this website. -->
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the homepage where users are immediately directed to when visting Jyoti's website. -->
+                    <li>
+                        <a href="Our%20Team.html">Our Team</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the team members webpage for Jyoti. -->
+                    <li> <!-- "currentpage" is bolded given that end-user is viewing this specific webpage.. -->
+                        <a class="currentpage" href="Gallery.html">Gallery</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the images webpage for Jyoti. -->
+                    <li> 
+                        <a href="Catering.html">Catering</a>
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the catering and banquet hall webpage for Jyoti. -->
+                    <li> 
+                        <a href="ContactUs.html">Contact Us</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This showcases the contact information webpage for Jyoti. -->
+                </ul>
+                
+                <img src="images/headerandfooter/HamburgerMenu.png" id="hamburger-icon"> <!-- Shows a hamburger-menu navigation for the media queries. -->
+            </nav> <!-- Closes the navigation section. -->    
+        </header> <!-- Closes the header section. -->
+        
+        <main class="imagegallery">
+            <div class="imagescontainer"> <!-- Specifies where each respective section's (header's) set of images are being placed. -->
+                <h1 class="foodscontainer"><u>Food</u></h1> <!-- Specifies assortment of some foods offered at Jyoti. -->
+                
+                <div class="container foodscontainer">
+                    <div class="subtitle appetizers"><h2 class="headercenter">Appetizers</h2><hr></div> <!-- Specifies some foods offered at Jyoti which are appetizers only. -->
+                        <img src="images/gallery/food/appetizers/ChaatPapri.jpg"
+                             class="chaatpapri">
+                        <img src="images/gallery/food/appetizers/ChickenPakora.jpeg"
+                             class="chickenpakora">
+                        <img src="images/gallery/food/appetizers/PanirTikka.jpg"
+                             class="panirtikka">
+                    
+                    <div class="subtitle vegetarianentrees"><h2 class="headercenter">Vegetarian Entrees</h2><hr></div> <!-- Specifies some foods offered at Jyoti which are vegetarian only. -->
+                        <img src="images/gallery/food/vegetarian/PanirBhurji.jpg"
+                             class="panirbhurji">
+                        <img src="images/gallery/food/vegetarian/SagPanir.jpg"
+                             class="sagpanir">
+                        <img src="images/gallery/food/vegetarian/MalaiKofta.jpg"
+                             class="malaikofta">
+                        <img src="images/gallery/food/vegetarian/PanirMasala.jpeg"
+                             class="panirmasala">
+                    
+                    <div class="subtitle non-vegetarianentrees"><h2 class="headercenter">Non-Vegetarian Entrees</h2><hr></div> <!-- Specifies some foods offered at Jyoti which are non-vegetarian. This includes meat and seafood dishes. -->
+                        <img src="images/gallery/food/nonvegetarian/ChickenTikkaMasala.jpg"
+                             class="chickentikkamasala">
+                        <img src="images/gallery/food/nonvegetarian/LambKorma.jpg"
+                             class="lambkorma">
+                        <img src="images/gallery/food/nonvegetarian/GoatVindaloo.jpg"
+                             class="goatvindaloo">
+                        <img src="images/gallery/food/nonvegetarian/ShrimpCurry.jpg"
+                             class="shrimpcurry">
+                </div>
+            </div>
+            
+            <div class="imagescontainer"> <!-- Specifies where each respective section's (header's) set of images are being placed. -->
+                <h1 class="drinkscontainer"><u>Drinks</u></h1> <!-- Specifies assortment of some drinks offered at Jyoti. -->
+                    
+                <div class="container drinkscontainer">
+                    <div class="subtitle whitewines"><h2 class="headercenter">White Wines</h2><hr></div> <!-- Specifies some drinks offered at Jyoti which are white wines only. -->
+                        <img src="images/gallery/drinks/whitewines/Chardonnay.jpg"
+                             class="chardonnay">
+                        <img src="images/gallery/drinks/whitewines/PinotGrigio.jpg"
+                             class="pinotgrigio">
+                    
+                    <div class="subtitle redwines"><h2 class="headercenter">Red Wines</h2><hr></div> <!-- Specifies some drinks offered at Jyoti which are red wines only. -->
+                        <img src="images/gallery/drinks/redwines/Merlot.jpg"
+                             class="merlot">
+                        <img src="images/gallery/drinks/redwines/PinotNoir.jpg"
+                             class="pinotnoir">
+                    
+                    <div class="subtitle non-alcoholicbeverages"><h2 class="headercenter">Non-Alcoholic Beverages</h2><hr></div> <!-- Specifies some drinks offered at Jyoti which are non-alcoholic to drink. -->
+                        <img src="images/gallery/drinks/nonalcoholic/MangoLassi.jpg"
+                             class="mangolassi">
+                        <img src="images/gallery/drinks/nonalcoholic/MasalaSoda.jpg"
+                             class="masalasoda">
+                        <img src="images/gallery/drinks/nonalcoholic/HotIndianTea.jpeg"
+                             class="hotindiantea">
+                        <img src="images/gallery/drinks/nonalcoholic/PinaColada.jpeg"
+                             class="pinacolada">
+                </div>
+            </div>
+            
+            <div class="imagescontainer"> <!-- Specifies where each respective section's (header's) set of images are being placed. -->
+                <h1 class="establishmentcontainer"><u>Establishment</u></h1> <!-- Specifies the interior of Jyoti's restaurant and banquet hall. -->
+                
+                <div class="container establishmentcontainer">
+                    <div class="subtitle banquethall"><h2 class="headercenter">Banquet Hall</h2><hr></div>
+                        <img src="images/gallery/establishment/banquethall/BanquetHall1.jpg"
+                             class="banquethall1">
+                        <img src="images/gallery/establishment/banquethall/BanquetHall2.jpg"
+                             class="banquethall2">
+                        <img src="images/gallery/establishment/banquethall/BanquetHall3.jpeg"
+                             class="banquethall3">
+                
+                    <div class="subtitle restaurant"><h2 class="headercenter">Restaurant</h2><hr></div>
+                        <img src="images/gallery/establishment/restaurant/Restaurant1.jpg"
+                             class="restaurant1">
+                        <img src="images/gallery/establishment/restaurant/Restaurant2.jpg"
+                             class="restaurant2">
+                </div>
+            </div>
+        </main>
+        
+        <footer> <!-- Begins footer section.-->
+            <br>Copyright &copy; 2024 <b>Jyoti</b> <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Indicates copyright information, including copyright symbol. Website logo is also displayed.-->
+            <br>
+            <br><a href="https://www.facebook.com/jyotires/about/?ref=page_internal&paipv=0&eav=AfYeGMl2Vd7WpVTVwzfjCfOfo8eoOkJyXsWJTWg1PM1DosEBUR9bvm4H7hdTPZ5bPXw&_rdr"><img src="images/headerandfooter/FacebookLogo.jpg"></a> <!-- Displays clickable Facebook logo where end-users are taken directly to Jyoti's Facebook page.-->
+            <a href="https://www.instagram.com/jyotibanquet/"><img src="images/headerandfooter/InstagramLogo.png"></a> <!-- Displays clickable Instagram logo where end-users are taken directly to Jyoti's Instagram page.-->
+        </footer> <!-- Ends footer section.-->
+        
+        <script type="text/javascript" src="scripts/Hamburger.js"></script> <!-- Opens and closes the navigation menu specified for media queries only. -->
+    </body>
+</html> <!-- Ends what end-user sees for particular webpage. -->

@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!-- This section of code is always required in every HTML document. -->
+<html lang="en"> <!-- This section of code describes the HTML language. Since this website is for an American business, English is specified as the language. -->
+    <head> <!-- Indicates starting the head section. -->
+        <title>Jyoti | Indian Restaurant &amp; Banquet Hall</title> <!-- Specifies the name of the business to be shown as the title of the website on the page's tab. Since this website is for Jyoti, the restaurant name is shown along with its banquet hall. -->
+        <link rel="stylesheet" href="stylesheets/Jyoti.css"> <!-- References root folder where all applicable files are to be used for every single one of these pages for the Jyoti website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/> <!-- This section of code is always required in every HTML document. --> 
+    </head> <!-- Closes the head section. -->
+    
+    <body> <!-- Beginning of the homepage content. -->
+        <header> <!-- Indicates starting the header section. -->
+            <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Specifies the name of the website for users to see when they directly enter the website. -->
+        
+            <nav class="navcontainer">
+                <ul class="menu"> <!-- Specifies navigation links concurrent for all webpages of this website. -->
+                    <li>
+                        <a href="index.html">Home</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the homepage where users are immediately directed to when visting Jyoti's website. -->
+                    <li>
+                        <a href="Our%20Team.html">Our Team</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the team members webpage for Jyoti. -->
+                    <li>
+                        <a href="Gallery.html">Gallery</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the images webpage for Jyoti. -->
+                    <li> <!-- "currentpage" is bolded given that end-user is viewing this specific webpage.. -->
+                        <a class="currentpage" href="Catering.html">Catering</a>
+                    </li> <!-- Specifies that this is one of five navigation sections. This is the catering and banquet hall webpage for Jyoti. -->
+                    <li> 
+                        <a href="ContactUs.html">Contact Us</a> 
+                    </li> <!-- Specifies that this is one of five navigation sections. This showcases the contact information webpage for Jyoti. -->
+                </ul>
+        
+                <img src="images/headerandfooter/HamburgerMenu.png" id="hamburger-icon"> <!-- Shows a hamburger-menu navigation for the media queries. -->
+            </nav> <!-- Closes the navigation section. -->    
+        </header> <!-- Closes the header section. -->
+        
+        <main style="background-color: darkslategray"> <!-- Instead of using a class, in-line CSS was used because there was only one style to specify. -->
+            <div id="cateringdescription">
+                <p>Jyoti is delighted to cater food and drinks to your function! Whether it be a graduation party, Sweet 16, or engagement reception, among other types of events, Jyoti can offer a great experience pairing your event with a taste of fine Indian cuisine. It's a match made in heaven!</p>
+
+                <p>Our dedicated team members will work with you one-on-one to ensure that the event you're planning is successful. Jyoti can offer you a vegetarian-only menu in case members of your party have any dietary restrictions or allergies. Jyoti can substitute using other ingredients to ensure that all food and drink items give you the same exquisite taste of Indian cuisine you are looking for. Pricing is flexible, and we can offer items that are custom-made in recipes with fusion cuisine, or traditional and contemporary in taste given the various regimes of Indian cuisine.</p>
+
+                <p>No matter if it's just appetizers or a full assortment of Indian food and drink items, Jyoti offers the ability to make sure your event functions smoothly with our array of products ensuring you get an amazing taste of India.</p>
+            </div>
+
+            <div id="banquethall">
+                <h1><u>Banquet Hall Information</u></h1>
+                    <p>Jyoti welcomes you the opportunity to celebrate your momentous occasion in our massive banquet hall. No matter if it's an event of just 40 or as many as 150 people, Jyoti can make your night a memorable one cherished for life. Jyoti welcomes outside DJs and even food from another restaurant to be placed in the banquet hall. Additionally, you are more than welcome to bring your own drinks, but our bar features an assortment of alcohol from standard to sophisticated liquor products. An open bar can be accommodated as well with just soda products.</p>
+
+                    <p>Note that because of high demand, slots fill up easily. Jyoti recommends you book at least a month in advance to host your event in the banquet hall. Nevertheless, we ensure your event will be spectacular given that silverware and other fine china, as well as chairs and tables, among other standard items held in a banquet hall, are already provided for your use. Rent our indoor space for your next private event today!</p>
+            </div>
+
+            <section class="faq"> <!-- Used different semantic tag here to showcase the form as its own separate element. -->
+                <h1><u>Frequently Asked Questions (FAQs)</u></h1>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>What type of menus do you offer?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                    </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">Jyoti bases its catering and banquet hall menu on that of the restaurant, as well as through food delivery partners GrubHub, Uber Eats, &amp; Doordash. Jyoti also has an exclusive dessert menu for events. If you contact us before your booking, we can revise and accommodate the menu to suit your party's dietary preferences and restrictions, such as offering vegetarian foods only.</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>How much food can you accommodate for larger events to be catered?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                    </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">For work meetings and other events, there is no limit on the amount of food ordered. Though we are busy with the number of guests who order catering from the restaurant, Jyoti can send a tray of just fresh appetizers to a full assortment of Indian food. We provide all drinks except for alcohol products.</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>How much time in advance do you need from us to notify you of making a catering order?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                    </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">Since we cater around 5 events per day on average and serve a large number of customers inside the restaurant every day, Jyoti requires at least a two-week notice to ensure your event goes smoothly. It is still acceptable to call during a time period shorter than that, though we have the right to deny your event given our availability. Do know that Jyoti is extremely flexible and will do everything to cater your event!</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>How far away can you arrange catering orders?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                    </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">3 team members from Jyoti will typically drive to your event and ensure the set-up process and food/drink displays are set up accordingly. Jyoti can cater to your party within a 25-mile driving distance. This means all of Wayne is covered, and includes areas like Parsippany, Randolph, Fairfield, and New York City, among others.</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>Does the banquet hall allow for events to be hosted if there are as less as 20 people?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                    </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">Because our space is very spacious in size, we try to accommodate parties with 40 people as the minimum. Typically, Jyoti does not allow for exceptions to be made. However, you are more than welcome to mention this to the caterer helping you, and we will try our best to accommodate this request.</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>Do your staff members handle the full set-up for events at the banquet hall?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                    </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">At a minimum, Jyoti sets up the displays for food and drinks, as well as the restaurant ambiance. This includes the arrangement of seating and tables. You are more than welcome to ask us to change the displays in a way you feel better serves your event. For DJs and other external vendors such as the food and drink from other restaurants, they are responsible for setting up their materials accordingly.</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>Does the banquet hall operate on holidays such as Memorial Day, July 4, and Christmas?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                        </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">The banquet hall hours can be found <a href="ContactUs.html">here</a>, and they are consistent throughout the calendar year. So long as the date of the holiday matches the banquet hall hours specified on the days of the week, then there should be no problem hosting your event.</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+
+                <div class="questions">
+                    <div class="questionsheader" onclick="togglequestion (this)"> <!-- Provides JavaScript function to toggle switch opening or closing answer for each respective question. -->
+                        <h3>Who can I contact for more information?</h3>
+                        <div>&#x25B6;</div> <!-- Showcases arrow symbol to the right of each question where end-user can display or hide the answer given by each question. -->
+                        </div>
+                    <div style="display: none; background-color: lightgoldenrodyellow; color: sienna; font-family: Georgia; padding: 10px">You can call the restaurant number specified <a href="ContactUs.html">on this webpage.</a> It is consistent for the general restaurant, as well as for the catering and banquet hall offered at Jyoti. Do specify on the call that you are asking for more details about catering or hosting an event in the banquet hall to speak with the relevant team member.</div>
+                    <!-- Instead of using a class, in-line CSS is used to specify rules to give as part of each question's answer. -->
+                </div>
+            </section>
+        </main>
+
+        <footer> <!-- Begins footer section.-->
+            <br>Copyright &copy; 2024 <b>Jyoti</b> <img src="images/headerandfooter/RestaurantLogo.png"> <!-- Indicates copyright information, including copyright symbol. Website logo is also displayed.-->
+            <br>
+            <br><a href="https://www.facebook.com/jyotires/about/?ref=page_internal&paipv=0&eav=AfYeGMl2Vd7WpVTVwzfjCfOfo8eoOkJyXsWJTWg1PM1DosEBUR9bvm4H7hdTPZ5bPXw&_rdr"><img src="images/headerandfooter/FacebookLogo.jpg"></a> <!-- Displays clickable Facebook logo where end-users are taken directly to Jyoti's Facebook page.-->
+            <a href="https://www.instagram.com/jyotibanquet/"><img src="images/headerandfooter/InstagramLogo.png"></a> <!-- Displays clickable Instagram logo where end-users are taken directly to Jyoti's Instagram page.-->
+        </footer> <!-- Ends footer section.-->
+        
+        <script type="text/javascript" src="scripts/Hamburger.js"></script> <!-- Opens and closes the navigation menu specified for media queries only. -->
+        <script type="text/javascript" src="scripts/FAQs.js"></script> <!-- Provides JavaScript function controls for the FAQs displayed on this webpage. -->
+    </body>
+</html> <!-- Ends what end-user sees for particular webpage. -->

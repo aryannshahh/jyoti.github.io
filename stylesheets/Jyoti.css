@@ -1,0 +1,761 @@
+/* Set of rules for main viewport (screen) only; no media queries. */
+
+/* Begins common set of rules applied to all webpages. */
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    height: 85px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #0C0D12;
+} /* Includes both the navigation links and the logo of Jyoti. */
+
+header nav {
+    margin-left: auto;
+    font-size: 1.5em;
+}
+
+#hamburger-icon {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+} /* Specifies navigation link rules. */ 
+
+header nav ul li {
+    margin: 0 15px; 
+} /* Specifies the margin between each navigation link. */
+
+/* Pseudoclasses illustrating link properties for all webpage links specified in the navigation. */
+nav a:link {color: white; text-decoration: none}
+nav a:visited {color: white}
+nav a:hover {text-decoration: underline}
+
+.currentpage {
+   font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Courier New", sans-serif;
+    text-align: center;
+    color: initial;
+}
+
+footer {
+    background-color: coral;
+    display: inherit;
+    margin: auto;
+    width: 88%;
+    color: dimgrey;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, cursive, sans-serif;
+}
+
+footer img {
+    height: 40px;
+} /* Targets the Facebook, Instagram, and restaurant logo of Jyoti. */
+/* Ends common set of rules applied to all webpages. */
+
+/* Begins set of rules specified in "Home" webpage. */
+.homepagemain {
+    background-color: darkslategray;
+}
+
+.ourstorycontainer {
+    display: flex;
+}
+
+#homepagevideo {
+    background-color: lightblue;
+}
+
+.ourstory {
+    margin: 22px;
+    padding: 25px;
+    background-color: lightgoldenrodyellow;
+}
+
+.ourstory p {
+    font-size: 20px;
+} /* Targets the text with a paragraph tag specified in the "Our Story" aspect of the webpage, changing the font-size. */
+
+.ourstory ul {
+    border-width: 5px;
+    border-color: maroon;
+    border-style: ridge;
+    font-weight: 600;
+} /* Targets the bulleted list specified in the "Our Story" aspect of the webpage, setting applicable rules there. */
+
+.featuredfoods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 100px;
+    width: 100%;
+    margin-top: 57px;
+}
+
+.featuredfoods figure {
+    margin: 0;
+} /* Specifies that images of the featured food displayed on webpage does not have any margins applied. */
+
+.featuredfoods figure img {
+    width: 100%;
+    height: 500px;
+} /* Sets the dimensions of the image inside the Figure HTML tag on this webpage. */
+
+.featuredfoods figcaption {
+    text-align: center;
+    font-size: 20px;
+    color: azure;
+} /* Configures the captions for each figure displayed on this webpage. */
+
+.testimonialscontainer {
+    margin-top: 57px;
+    background-color: honeydew;
+}
+
+.testimonialsgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 100px;
+    width: 97.5%;
+    border: 4px groove;
+    border-color: firebrick;
+    padding: 1%;
+    color: saddlebrown;
+    font-size: 29px;
+    font-family: Georgia;
+}
+
+.testimonialsheadshots {
+    overflow: hidden;
+    height: 250px;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.testimonialsheadshots img {
+    width: 100%;
+}
+
+/* Ends set of rules specified in "Home" webpage. */
+
+/* Begins set of rules specified in "Our Team" webpage. */
+.ourteammain {
+    width: 100%;
+    background-color: darkslategray;
+    display: inline-block;
+    text-align: center;
+}
+
+.ourteamvideocontainer {
+    background-color: lightblue;
+    max-width: 650px;
+    margin: 0 auto;
+} /* Holds video rules for webpage. */
+
+#ourteamvideo {
+    height: 362px;
+    max-width: 650px;
+    width: 100%;
+} /* Specifies video (media) player dimensions. */ 
+
+.staffheadshots {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 200px;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    align-items: center;
+} /* Puts container around headshot images to prop them to equal dimensions. */
+
+.staffheadshots img {
+    width: 100%;
+}
+
+.teamcontainer {
+    margin: 20px;
+}
+
+.teamcontainer p {
+    text-align: left;
+    margin: 10px;
+}
+
+.teamgroup {
+    width: 100%;
+    display: flex;
+} 
+
+.chefscontainer {
+    background-color: honeydew;
+} /* Container for some chef headshots and respective descriptions specified in namesake header. */
+
+.chefsinfo {
+    width: 50%;
+    margin: 11px;
+    margin-top: 0;
+    border: 3px solid firebrick;
+}
+
+.bartenderscontainer {
+    background-color: lightgoldenrodyellow;
+} /* Container for some bartender headshots and respective descriptions specified in namesake header. */
+
+.bartendersinfo {
+    width: 50%;
+    margin: 11px;
+    margin-top: 0;
+    border: 3px solid firebrick;
+}
+
+.waiterscontainer {
+    background-color: gainsboro;
+} /* Container for some waiter headshots and respective descriptions specified in namesake header. */
+
+.waitersinfo {
+    width: 33%;
+    margin: 11px;
+    margin-top: 0;
+    border: 3px solid firebrick;
+}
+
+.servercontainer {
+    background-color: azure;
+} /* Container for one particular waiter headshot and their description specified in namesake header. */
+
+.serverinfo {
+    width: 100%;
+    margin: 11px;
+    margin-top: 0;
+    border: 3px solid firebrick;
+}
+
+.caterercontainer {
+    background-color: navajowhite;
+} /* Container for one particular caterer headshot and their description specified in namesake header. */
+
+.catererinfo {
+    width: 100%;
+    margin: 11px;
+    margin-top: 0;
+    border: 3px solid firebrick;
+}
+/* Ends set of rules specified in "Our Team" webpage. */
+
+/* Begins set of rules specified in "Gallery" webpage. */
+h2 {
+    color: cadetblue;
+    font-family: Helvetica, sans-serif;
+    font-stretch: ultra-expanded;
+    margin-block: 0.4em;
+}
+
+.imagegallery {
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    background-color: darkslategray;
+}
+
+.imagescontainer {
+    margin: 0 auto;
+}
+
+.imagescontainer h1 {
+    padding: 20px;
+    margin-block: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 4px;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    margin-block-start: 27px;
+} /* Adds space between images preceding the H2 HTML tag and the tag itself. */
+
+.subtitle {
+    display: grid;
+}
+
+.subtitle hr {
+    width: 90%;
+    border-style: solid;
+    color: orchid;
+    border-width: 2px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.headercenter {
+    text-align: center;
+    font-size: revert;
+}
+
+.foodscontainer {
+    background-color: lightgoldenrodyellow;
+    grid-template-rows: auto 225px 225px auto 225px 225px auto 225px 225px;
+}
+/* Begins specifying grid layout for images specified in first namesake header. */
+.appetizers {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.chaatpapri {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.chickenpakora {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.panirtikka {
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.vegetarianentrees {
+    grid-area: 4 / 1 / 4 / 3;
+}
+
+.panirbhurji {
+    grid-area: 5 / 1 / 5 / 1;
+}
+
+.sagpanir {
+    grid-area: 5 / 2 / 5 / 2;
+}
+
+.malaikofta {
+    grid-area: 6 / 1 / 6 / 1;
+}
+
+.panirmasala {
+    grid-area: 6 / 2 / 6 / 2;
+}
+
+.non-vegetarianentrees {
+    grid-area: 7 / 1 / 7 / 3;
+}
+
+.chickentikkamasala {
+    grid-area: 8 / 1 / 8 / 1;
+}
+
+.lambkorma {
+    grid-area: 8 / 2 / 8 / 2;
+}
+
+.goatvindaloo {
+    grid-area: 9 / 1 / 9 / 1;
+}
+
+.shrimpcurry {
+    grid-area: 9 / 2 / 9 / 2;
+}
+/* Ends specifying grid layout for images specified in first namesake header. */
+
+.drinkscontainer {
+    background-color: navajowhite;
+    grid-template-rows: auto 225px auto 225px auto 225px 225px;
+}
+/* Begins specifying grid layout for images specified in second namesake header. */
+.whitewines {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.chardonnay {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.pinotgrigio {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.redwines {
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.merlot {
+    grid-area: 4 / 1 / 4 / 1;
+}
+
+.pinotnoir {
+    grid-area: 4 / 2 / 4 / 2;
+}
+
+.non-alcoholicbeverages {
+    grid-area: 5 / 1 / 5 / 3;
+}
+
+.mangolassi {
+    grid-area: 6 / 1 / 6 / 1;
+}
+
+.mangosoda {
+    grid-area: 6 / 2 / 6 / 2;
+}
+
+.hotindiantea {
+    grid-area: 7 / 1 / 7 / 1;
+}
+
+.pinacolada {
+    grid-area: 7 / 2 / 7 / 2;
+}
+/* Ends specifying grid layout for images specified in second namesake header. */
+
+.establishmentcontainer {
+    background-color: honeydew;
+      grid-template-rows: auto 225px 225px auto 225px;
+}
+
+/* Begins specifying grid layout for images specified in third namesake header. */
+.banquethall {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.banquethall1 {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.banquethall2 {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.banquethall3 {
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.restaurant {
+    grid-area: 4 / 1 / 4 / 3;
+}
+
+.restaurant1 {
+    grid-area: 5 / 1 / 5 / 1;
+}
+
+.restaurant2 {
+    grid-area: 5 / 2 / 5 / 2;
+}
+/* Ends specifying grid layout for images specified in second namesake header. */
+/* Ends set of rules specified in "Gallery" webpage. */
+
+/* Begins set of rules specified in "Catering" webpage. */
+#cateringdescription {
+    margin: 23px;
+    padding: 10px;
+    color: sienna;
+    font-size: 29px;
+    font-family: Georgia;
+    background-color: honeydew;
+}
+
+#banquethall {
+    padding: 10px;
+    font-size: 22px;
+    font-family: Georgia;
+    margin: 10px;
+    background-color: lightgoldenrodyellow;
+    color: sienna;
+    border: 5px solid saddlebrown;
+    border-radius: 30px;
+}
+
+.faq {
+    font-family: "Courier New", sans-serif;
+    color: initial;
+    width: 100%;
+    font-size: 29px;
+    margin: 52px;
+    background-color: honeydew;
+} /* Targets all aspects of the FAQs. */
+
+.questions {
+    background-color: lightgray;
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Times New Roman"
+} /* Targets the questions only specified in the FAQs. */
+
+.questionsheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+} /* The header refers to the H3 HTML tag stating each question presented in the FAQ. */
+/* Ends set of rules specified in "Catering" webpage. */
+
+/* Begins set of rules specified in "Contact Us" webpage. */
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    color: navajowhite;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+.hours {
+    background-color: honeydew;
+    width: 26%;
+    color: sienna;
+    font-size: 18px;
+}
+
+.restauranthours {
+    margin-right: 0.5%;
+}
+
+.contactitems {
+    width: 47.5%;
+}
+
+.contactitems img {
+    height: 33px;
+    width: 33px;
+}
+
+.contactitems a:link {color: aqua}
+.contactitems a:visited {color: forestgreen}
+
+span.hidenotphone {
+    display: none;
+}
+
+.mapandform {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: Georgia, fantasy;
+    color: darkcyan;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.mapandform form {
+    width: 52%;
+    background-color: lightgray;
+    margin-left: auto;
+}
+
+.mapandform label {
+    display: block;
+}
+
+.mapandform input{
+    width: 94%;
+}
+
+.mapandform select{
+    width: 95%;
+}
+
+.mapandform textarea{
+    width: 94%;
+    resize: vertical;
+}
+
+.mapJyoti {
+    width: 47.5%;
+}
+
+.mapJyoti img {
+    width: 100%;
+}
+/* Ends set of rules specified in "Contact Us" webpage. */
+
+/* Ends set of rules specified for main viewport (screen) only; no media queries. */
+
+
+/* Begins set of rules specified for media queries. */
+
+/* Begins set of rules for tablets. Dimensions specified come from that of the respective device. */
+@media screen and (max-width: 810px) and (max-height: 1080px) {
+    /* Begins common set of rules applied to all webpages. */
+    header nav ul {
+        display: none;
+        position: absolute;
+        top: 85px;
+        right: 0px;
+        background-color: darkgrey;
+        height: unset;
+    }
+    
+    #hamburger-icon {
+        width: 73px;
+        display: block;
+        margin-left: auto;
+    }
+    /* Ends common set of rules applied to all webpages. */
+
+    /* Begins set of rules specified for "Home" webpage. */
+    .ourstorycontainer {
+        flex-wrap: wrap;
+    }
+
+    #homepagevideo {
+        width: 100%;
+    }
+
+    .testimonialsgrid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        width: 97%;
+    }
+
+    .hidenotdesktop {
+        display: none;
+    }
+    /* Ends set of rules specified in "Home" webpage. */
+    
+    /* Begins set of rules specified in "Gallery" webpage. */
+    .imagescontainer {
+        width: 100%;
+    }
+    
+    .container {
+        margin-bottom: 100px;
+    }
+    
+    .foodscontainer {
+        grid-template-rows: auto 270px 270px auto 270px 270px auto 270px 270px;
+    }
+    
+    .drinkscontainer {
+        grid-template-rows: auto 300px auto 300px auto 300px 300px;
+    }
+    
+    #hamburger-icon {
+        width: 73px;
+        display: block;
+        margin-left: auto;
+    }
+    /* Ends set of rules specified in "Gallery" webpage.
+    
+    /* Begins set of rules specified in "Catering" webpage. */
+    .faq {
+        margin: 33px;
+    }
+    /* Ends set of rules specified in "Catering" webpage. */
+    
+    /* Begins set of rules specified in "Contact Us" webpage. */
+    .contactinfo div {
+        width: 100%;
+    }
+
+    .contactinfo section {
+        width: 100%;
+    }
+    
+    .mapJyoti img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .restauranthours {
+        margin-top: 3px;
+        margin-bottom: 6px;
+        margin-right: 0;
+    }
+    /* Ends set of rules specified in "Contact Us" webpage. */
+}
+/* Ends set of rules for tablets. */
+
+/* Begins set of rules for mobile devices. Dimensions specified come from that of the respective device. */
+@media screen and (max-width: 430px) and (max-height: 932px) {
+    /* Begins common set of rules applied to all webpages. */
+    span.hidenotphone {
+        display: initial;
+    }
+    /* Ends common set of rules applied to all webpages. */
+
+    /* Begins set of rules specified in "Home" webpage. */
+    .featuredfoods {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonialsgrid {
+        grid-template-columns: 1fr;
+        width: 96%;
+    }
+    /* Ends set of rules specified in "Home" webpage. */
+
+    /* Begins set of rules specified in "Our Team" webpage. */
+    .teamgroup {
+        flex-wrap: wrap;
+    }
+
+    .chefsinfo {
+        width: 100%;
+    }
+
+    .bartendersinfo {
+        width: 100%;
+    }
+
+    .waitersinfo {
+        width: 100%;
+    }
+    /* Ends set of rules specified in "Our Team" webpage. */
+
+    /* "Begins set of rules specified in "Contact Us" webpage. */
+    .contactitems {
+        font-size: 19px;
+    }
+    
+    .restauranthours {
+        margin-top: 8px;
+        margin-bottom: 6px;
+        margin-right: 0;
+    }
+    
+    .mapJyoti {
+        width: 100%;
+    }
+
+    .mapandform form {
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* Ends set of rules specified in "Contact Us" webpage. */
+}
+
+/* Ends set of rules specified for mobile devices. */
+
+
+/* Ends media query. */
+
+
+
+/* Ends all screen rules. */
